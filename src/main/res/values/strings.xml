@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Senera</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_version">Version info</string>
+    <string name="version_title">SENERA client</string>
+    <string name="select_usb_title">Select a USB device</string>
+    <string name="message_text_initial">Disconnected</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Notification channel strings -->
+    <string name="channel_name">SENERA Service</string>
+    <string name="channel_description">SENERA Service Notifications</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- SENERA settings -->
+    <string name="pref_category_sensor_config">Sensor configuration</string>
+    <string name="pref_title_sensor_id">Sensor ID</string>
+
+    <string name="pref_title_sensor_type">Sensor type</string>
+    <string-array name="pref_sensor_type_titles">
+        <item>IMS MGS sensor</item>
+        <item>ANSeeN sensor</item>
+        <item>RITEC sensor</item>
+        <item>Dummy sensor</item>
+    </string-array>
+    <string-array name="pref_sensor_type_values">
+        <item>MGS</item>
+        <item>ANSEEN</item>
+        <item>RITEC</item>
+        <item>DUMMY</item>
+    </string-array>
+
+    <string-array name="pref_calibration_type_titles">
+        <item>Graph Calibration</item>
+        <item>Manual Calibration</item>
+        <item>Without Calibration</item>
+    </string-array>
+
+    <string-array name="pref_calibration_type_values">
+        <item>graph</item>
+        <item>manual</item>
+        <item>none</item>
+    </string-array>
+
+    <string name="pref_title_sensor_control_port">Control port</string>
+
+    <string name="pref_category_server_config">Fusion server</string>
+    <string name="pref_title_fusion_server_address">Fusion server address</string>
+    <string name="pref_title_fusion_server_port">Fusion server port</string>
+    <string name="pref_title_calibration_type">Type of Calibration</string>
+
+    <string name="pref_category_device_config">Device configuration</string>
+    <string name="pref_title_device_serial_number">Device serial number</string>
+
+    <string name="pref_category_location_config">Location configuration</string>
+    <string name="pref_title_use_static_location">Use static location</string>
+    <string name="pref_title_static_loc_lon">Static location: Longitude</string>
+    <string name="pref_title_static_loc_lat">Static location: Latitude</string>
+    <string name="pref_title_static_loc_alt">Static location: Altitude</string>
+
+    <string name="pref_category_spectrum_listeners">Spectrum listeners</string>
+    <string name="pref_title_use_console_spectrum_listener">Use console spectrum listener</string>
+    <string name="pref_title_use_file_spectrum_listener">Use file spectrum listener</string>
+    <string name="pref_title_file_spectrum_listener_filename">File spectrum listener filename</string>
+    <string name="pref_title_use_csv_spectrum_listener">Use CSV spectrum listener</string>
+    <string name="pref_title_csv_spectrum_listener_filename">CSV spectrum listener filename</string>
+    <string name="pref_title_use_ws_spectrum_listener">Use Web Service spectrum listener</string>
+
+    <string name="pref_category_advanced_settings">Advanced settings</string>
+    <string name="pref_title_jd2xx_port_timeout">JD2XX port wait loop (millions)</string>
+    
+    <string name="pref_category_anseen_configuration">ANSeeN sensor configuration</string>
+    <string-array name="pref_anseen_gain_titles">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="pref_anseen_gain_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string name="pref_title_anseen_gain">Analog gain</string>
+    <string name="pref_title_anseen_lld1">LLD1: Lower Level Discriminator</string>
+    <string name="pref_title_anseen_uld1">ULD1: Upper Level Discriminator</string>
+    <string name="pref_title_hv_enabled">High Voltage enabled</string>
+    <string name="pref_title_hv_value">High Voltage value</string>
+    <string name="pref_title_offset">Offset (dc level)</string>
+
+    <string name="pref_category_ritec_configuration">RITEC sensor configuration</string>
+    <string-array name="pref_ritec_channels_titles">
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+        <item>2048</item>
+        <item>4096</item>
+        <item>8192</item>
+        <item>16384</item>
+    </string-array>
+    <string-array name="pref_ritec_channels_values">
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+        <item>2048</item>
+        <item>4096</item>
+        <item>8192</item>
+        <item>16384</item>
+    </string-array>
+    <string name="pref_title_ritec_channels">Channels</string>
+    <string name="pref_title_ritec_lld">LLD: Lower Level Discriminator</string>
+    <string name="pref_title_ritec_uld">ULD: Upper Level Discriminator</string>
+    <string name="pref_title_ritec_high_voltage">High Voltage (0-5000V)</string>
+    <string-array name="pref_ritec_hv_inhibit_titles">
+        <item>Inhibit off</item>
+        <item>Canberra HPGe mode</item>
+        <item>DSG HPGe mode</item>
+        <item>Ortec HPGe mode</item>
+    </string-array>
+    <string-array name="pref_ritec_hv_inhibit_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>-1</item>
+    </string-array>
+    <string name="pref_title_ritec_hv_inhibit">High voltage inhibit input</string>
+    <string name="pref_title_ritec_energy_per_channel_a">Energy per channel A</string>
+    <string name="pref_title_ritec_energy_per_channel_b">Energy per channel B</string>
+    <string name="pref_title_calibration_energy_per_channel">Energy per Channel (eV)</string>
+    <string name="pref_title_calibration_energy_constant">Energy Constant (eV)</string>
+    <string name="pref_title_calibration_energy_1">Energy 1 (eV)</string>
+    <string name="pref_title_calibration_energy_2">Energy 2 (eV)</string>
+    <string name="pref_title_calibration_channel_1">Channel of Energy 1</string>
+    <string name="pref_title_calibration_channel_2">Channel of Energy 2</string>
+
+
+</resources>

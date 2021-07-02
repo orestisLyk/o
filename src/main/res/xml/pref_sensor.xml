@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_category_sensor_config">
+        <EditTextPreference
+            android:defaultValue="100"
+            android:key="pref_key_sensor_id"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_sensor_id" />
+
+        <ListPreference
+            android:defaultValue="RITEC"
+            android:entries="@array/pref_sensor_type_titles"
+            android:entryValues="@array/pref_sensor_type_values"
+            android:key="pref_key_sensor_type"
+            android:title="@string/pref_title_sensor_type" />
+
+        <EditTextPreference
+            android:defaultValue="6000"
+            android:key="pref_key_sensor_control_port"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_sensor_control_port" />
+
+        <EditTextPreference
+            android:defaultValue="5B03021723150E54"
+            android:key="pref_key_device_serial_number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_device_serial_number" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="@string/pref_category_server_config">
+
+        <EditTextPreference
+            android:defaultValue="192.168.0.107"
+            android:key="pref_key_fusion_server_address"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_fusion_server_address" />
+
+        <EditTextPreference
+            android:defaultValue="8080"
+            android:numeric="integer"
+            android:key="pref_key_fusion_server_port"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_fusion_server_port" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

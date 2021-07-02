@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_category_location_config">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_key_use_static_location"
+            android:title="@string/pref_title_use_static_location" />
+
+        <EditTextPreference
+            android:defaultValue="23.819060"
+            android:key="pref_key_static_loc_lon"
+            android:numeric="decimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_static_loc_lon" />
+
+        <EditTextPreference
+            android:defaultValue="37.999069"
+            android:key="pref_key_static_loc_lat"
+            android:numeric="decimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_static_loc_lat" />
+
+        <EditTextPreference
+            android:defaultValue="266.0"
+            android:key="pref_key_static_loc_alt"
+            android:numeric="decimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_static_loc_alt" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_spectrum_listeners">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_use_console_spectrum_listener"
+            android:title="@string/pref_title_use_console_spectrum_listener" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_use_file_spectrum_listener"
+            android:title="@string/pref_title_use_file_spectrum_listener" />
+
+        <EditTextPreference
+            android:defaultValue="spectrum.txt"
+            android:key="pref_key_file_spectrum_listener_filename"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_file_spectrum_listener_filename" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_use_csv_spectrum_listener"
+            android:title="@string/pref_title_use_csv_spectrum_listener" />
+
+        <EditTextPreference
+            android:defaultValue="spectrum.csv"
+            android:key="pref_key_file_csv_listener_filename"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_csv_spectrum_listener_filename" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_key_use_ws_spectrum_listener"
+            android:title="@string/pref_title_use_ws_spectrum_listener" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_advanced_settings">
+        <EditTextPreference
+            android:defaultValue="50"
+            android:key="pref_key_jd2xx_port_timeout"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_jd2xx_port_timeout" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

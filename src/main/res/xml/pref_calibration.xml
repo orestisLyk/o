@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="manual"
+        android:entries="@array/pref_calibration_type_titles"
+        android:entryValues="@array/pref_calibration_type_values"
+        android:key="pref_key_calibration_type"
+        android:title="@string/pref_title_calibration_type" />
+
+    <EditTextPreference
+        android:key="graph_calibration"
+        android:title="GRAPH CALIBRATION"/>
+
+    <EditTextPreference
+        android:defaultValue="0"
+        android:key="pref_key_Calibration_energy_1"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_calibration_energy_1" />
+
+    <EditTextPreference
+        android:defaultValue="10"
+        android:key="pref_key_Calibration_energy_2"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_calibration_energy_2" />
+
+    <EditTextPreference
+        android:defaultValue="1"
+        android:key="pref_key_Calibration_channel_for_energy_1"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_calibration_channel_1" />
+
+    <EditTextPreference
+        android:defaultValue="2"
+        android:key="pref_key_Calibration_channel_for_energy_2"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_calibration_channel_2" />
+
+
+    <EditTextPreference
+        android:clickable="false"
+        android:key="manual_calibration"
+        android:title="MANUAL CALIBRATION" />
+
+
+    <EditTextPreference
+        android:defaultValue="20"
+        android:key="energy_per_channel"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_calibration_energy_per_channel"/>
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:key="energy_constant"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_calibration_energy_constant" />
+
+
+
+
+
+</PreferenceScreen>

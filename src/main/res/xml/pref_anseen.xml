@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_category_anseen_configuration">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_anseen_gain_titles"
+            android:entryValues="@array/pref_anseen_gain_values"
+            android:key="pref_key_anseen_gain"
+            android:title="@string/pref_title_anseen_gain" />
+
+        <EditTextPreference
+            android:defaultValue="0"
+            android:key="pref_key_anseen_lld1"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_anseen_lld1" />
+
+        <EditTextPreference
+            android:defaultValue="4095"
+            android:key="pref_key_anseen_uld1"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_anseen_uld1" />
+
+        <EditTextPreference
+            android:defaultValue="0"
+            android:key="pref_key_anseen_hv_enabled"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_hv_enabled" />
+
+        <EditTextPreference
+            android:defaultValue="0"
+            android:key="pref_key_anseen_hv_value"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_hv_value" />
+
+        <EditTextPreference
+            android:defaultValue="2000"
+            android:key="pref_key_anseen_offset"
+            android:numeric="integer"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_offset" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
